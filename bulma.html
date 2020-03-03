@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bulma</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <!-- NAV BRAND -->
+    <div class="navbar-brand">
+        <a class="navbar-item"><strong>LOUNARI</strong></a>
+
+        <!-- HAMBURGER -->
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+           data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <!-- NAV RUNKO -->
+    <div id="navbarBasicExample" class="navbar-menu">
+        <!-- START -->
+        <div class="navbar-start">
+            <a class="navbar-item">HOME</a>
+            <a class="navbar-item">YRITYS</a>
+
+            <!-- DROPDOWN -->
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">RAVINTOLAT</a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">Myyrmäki</a>
+                    <a class="navbar-item">Karaportti</a>
+                    <a class="navbar-item">Myllypuro</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- END -->
+        <div class="navbar-end">
+            <div class="navbar-item field has-addons">
+                <div class="control">
+                    <input class="input" type="text" placeholder="Etsi ravintolan nimellä">
+                </div>
+                <div class="control">
+                    <a class="button is-info">Etsi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero is-black">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">LOUNARI</h1>
+            <h2 class="subtitle">Missä tänään syötäisiin?</h2>
+        </div>
+    </div>
+</section>
+
+<!-- GRID -->
+<section class="section">
+    <div class="tile is-ancestor">
+        <div class="tile is-4 is-vertical is-parent">
+            <!-- 1/3 -->
+            <div class="tile is-child box">
+                <p class="title">Helppoa,</p>
+                <p class="has-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+            </div>
+            <div class="tile is-child box">
+                <p class="title">Eikö</p>
+                <p class="has-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+            </div>
+        </div>
+        <div class="tile is-parent">
+            <!-- 2/3 -->
+            <div class="tile is-child box">
+                <p class="title">Vain</p>
+                <figure class="image is-3by1"> <!-- 720x240px -->
+                    <img class="is-rounded" src="http://placekitten.com/720/300" alt="kisu">
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COLUMNS -->
+<div class="columns">
+    <div class="column has-text-centered has-background-success">EKA COLUMNI</div>
+    <div class="column has-text-centered has-background-warning">TOKA COLUMNI</div>
+    <div class="column has-text-centered has-background-danger">KOLMAS COLUMNI</div>
+    <div class="column has-text-centered has-background-info">NELJÄS COLUMNI</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer has-background-black">
+    <div class="content has-text-centered has-text-white">
+        <p>@2020 juhuu</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
